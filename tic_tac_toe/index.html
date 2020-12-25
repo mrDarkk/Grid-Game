@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>TICTACTOE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon/xo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+
+    <h2 align="center" style="font-style: italic;">Tic-Tac-Toe <i class='fas fa-gamepad' style='font-size:38px;color:#416dea'></i>
+
+    </h2>
+
+
+
+
+    <hr /><br>
+
+    <div id="card">
+
+        <h6 style='font-size:17px;'>
+            <center>Let's try your luck <i class='fas fa-dice' style='font-size:38px;color:#416dea'></i></center>
+        </h6>
+
+        <h5 id="player">
+            <center></center>
+        </h5>
+        <hr />
+        <br>
+
+        <table>
+            <!-- Creating a Table-->
+
+            <tr>
+                <!-- First Row-->
+                <td id="r1" onclick="printMark('1')"></td>
+                <td id="r2" onclick="printMark('2')"></td>
+                <td id="r3" onclick="printMark('3')"></td>
+            </tr>
+            <!-- Second Row -->
+            <tr>
+                <td id="r4" onclick="printMark('4')"></td>
+                <td id="r5" onclick="printMark('5')"></td>
+                <td id="r6" onclick="printMark('6')"></td>
+            </tr>
+            <!-- Third Row -->
+            <tr>
+                <td id="r7" onclick="printMark('7')"></td>
+                <td id="r8" onclick="printMark('8')"></td>
+                <td id="r9" onclick="printMark('9')"></td>
+            </tr>
+
+        </table>
+
+
+    </div>
+
+    <script src="tic_tac_toe.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,46 @@
+hr {
+    border: none;
+    border-top: 2px solid #f5f2f2;
+    height: 1px;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    background: #416dea;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+table {
+    margin: 10px auto;
+    border-radius: 50px;
+    color: white;
+}
+
+#card {
+    /* background-color: #c2defc; */
+    padding: 30px 10px;
+    margin: 30px auto;
+    max-width: 800px;
+    width: 95%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    /* transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12); */
+    padding: 14px 80px 18px 36px;
+    background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 160px;
+    /* cursor: pointer; */
+}
+
+
+/* body {
+    background-image: url("oop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+} */
