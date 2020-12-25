@@ -1,4 +1,7 @@
-# Milestone-3: Grid game
+# Milestone-3: Grid game (https://game-collection12.herokuapp.com)
+
+### Live demo
+https://game-collection12.herokuapp.com
 
 ## Learning Competencies
 At the end of this milestone you will learn
