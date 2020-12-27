@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TICTACTOE</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon/xo.ico">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
@@ -17,42 +19,55 @@
     </h2>
     <hr /> <br>
 
-    <div id="card">
+    <div class="container">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 
-        <h6 style='font-size:17px;'>
-            <center>Let's try your luck <i class='fas fa-dice' style='font-size:38px;color:#416dea'></i></center>
-        </h6>
 
-        <h5 id="player">
-            <center></center>
-        </h5>
-        <hr />
-        <br>
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="card" id="card">
+            <!-- <div class="card-header">
+              
+            </div> -->
+            <div class="card-body">
+                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                <h6 style='font-size:17px;'>
+                    <center>Let's try your luck <i class='fas fa-dice' style='font-size:38px;color:#416dea'></i></center>
+                </h6>
 
-        <table>
-            <!-- Creating a Table-->
+                <h5 id="player">
+                    <center></center>
+                </h5>
+                <hr />
+                <br>
+                <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                <table>
+                    <!-- Creating a Table-->
 
-            <tr>
-                <!-- First Row-->
-                <td id="r1" onclick="printMark('1')"></td>
-                <td id="r2" onclick="printMark('2')"></td>
-                <td id="r3" onclick="printMark('3')"></td>
-            </tr>
-            <!-- Second Row -->
-            <tr>
-                <td id="r4" onclick="printMark('4')"></td>
-                <td id="r5" onclick="printMark('5')"></td>
-                <td id="r6" onclick="printMark('6')"></td>
-            </tr>
-            <!-- Third Row -->
-            <tr>
-                <td id="r7" onclick="printMark('7')"></td>
-                <td id="r8" onclick="printMark('8')"></td>
-                <td id="r9" onclick="printMark('9')"></td>
-            </tr>
+                    <tr>
+                        <!-- First Row-->
+                        <td id="r1" onclick="printMark('1')"></td>
+                        <td id="r2" onclick="printMark('2')"></td>
+                        <td id="r3" onclick="printMark('3')"></td>
+                    </tr>
+                    <!-- Second Row -->
+                    <tr>
+                        <td id="r4" onclick="printMark('4')"></td>
+                        <td id="r5" onclick="printMark('5')"></td>
+                        <td id="r6" onclick="printMark('6')"></td>
+                    </tr>
+                    <!-- Third Row -->
+                    <tr>
+                        <td id="r7" onclick="printMark('7')"></td>
+                        <td id="r8" onclick="printMark('8')"></td>
+                        <td id="r9" onclick="printMark('9')"></td>
+                    </tr>
 
-        </table>
+                </table>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+        </div>
 
+        <!-- Columns are always 50% wide, on mobile and desktop -->
 
     </div>
 
