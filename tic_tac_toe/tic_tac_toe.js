@@ -1,6 +1,9 @@
 let sign = "X";
 let disp = document.getElementById("player");
 let box;
+var scores = new Array();
+scores['X'] = 0;
+scores['O'] = 0;
 
 function printMark(number) {
     let box = document.getElementById("r" + number); // Selecting the element by its ID and storing its value to box
@@ -43,6 +46,7 @@ function winnerOfGame() {
         checkMove(7, 5, 3, sign)
     ) {
         disp.innerHTML = "<center> Congratulations!! " + sign + " you Won This Match <i class='fas fa-chess-queen' style='font-size:28px;color:green'></i>" + "</center>";
+        scoreUpdate(sign);
         for (let i = 1; i <= 9; i++) {
             document.getElementById("r" + i).innerHTML = "";
         } // to reset the game once a player wins
@@ -66,5 +70,10 @@ function winnerOfGame() {
             throw "IT'S A TIE";
 
         }
+    }
+
+    function scoreUpdate(sign) {
+        scores[sign]++;
+        document.getElementById('score-' + sign).innerHTML = scores[sign];
     }
 }
